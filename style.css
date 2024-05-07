@@ -14,3 +14,24 @@ body {
   top: 50%;  /* Vertical centering (optional) */
   transform: translateY(-50%); /* Vertical centering (optional) */
 }
+.container {
+  position: relative; /* Needed for absolute positioning of image */
+  width: 100vw; /* Set container width to 100% viewport width */
+  height: 100vh; /* Set container height to 100% viewport height (optional) */
+}
+
+.container img {
+  position: absolute; /* Make image absolutely positioned */
+  top: 0; /* Position image at the top */
+  left: 0; /* Position image at the left */
+  width: 50%; /* Set image width to 50% */
+  object-fit: cover; /* Scale image to fill container while maintaining aspect ratio */
+}
+
+.text-content {
+  padding: 20px; /* Add some padding for better readability */
+  background-color: #f2f2f2; /* Optional background color for text area */
+  margin-top: 0; /* Remove default margin-top */
+  /* Optional positioning based on image height */
+  /* height: calc(100vh - image height);  */
+}
