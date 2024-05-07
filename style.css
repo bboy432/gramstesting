@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(88, 202, 255);
+  margin: 0;  /* Remove default margins */
+}
+.image-container {
+  height: 50vh; /* Set container height to 50% viewport height */
+  position: relative; /* Needed for vertical centering (optional) */
+}
+
+.image-container img {
+  width: 100%; /* Image takes full width of container */
+  height: auto;  /* Maintains image aspect ratio */
+  position: absolute;  /* Absolute positioning for centering (optional) */
+  top: 50%;  /* Vertical centering (optional) */
+  transform: translateY(-50%); /* Vertical centering (optional) */
+}
